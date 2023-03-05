@@ -1,27 +1,32 @@
-# Tutorial4
+<!--- The following README.md sample file was adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md by Gabriella Mosquera for academic use ---> 
+<!--- You may delete any comments in this sample README.md file. If needing to use as a .txt file then simply delete all comments, edit as needed, and save as a README.txt file --->
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+# Tutorial 4
 
-## Development server
+Individual tutorial repsitory
+Gitlab URL https://git.cs.dal.ca/thakwani/tutorial2/-/tree/main
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Modified Code
 
-## Code scaffolding
+File: profile-listing.componenet.ts
+Line: 36-41
+Function: searchResult
+Soruce: Multiple (StackOverFlow + Angular Documentation)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Authors
 
-## Build
+* [Falgun](fl700637@dal.ca) - *(Owner)*
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+PASSPHRASE for this repo
+-> tutorial2
 
-## Running end-to-end tests
+## Deployment
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Deployed on Netlify:- https://elaborate-pastelito-bdd6be.netlify.app/ 
 
-## Further help
+## Built With
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [Angular CLI](https://angularjs.org/) - The web framework used
