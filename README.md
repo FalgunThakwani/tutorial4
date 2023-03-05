@@ -3,8 +3,8 @@
 
 # Tutorial 4
 
-Individual tutorial repsitory
-Gitlab URL https://git.cs.dal.ca/thakwani/tutorial2/-/tree/main
+Tutorial 4 repsitory
+Gitlab URL https://git.cs.dal.ca/thakwani/tutorial2/-/tree/tutorial4
 
 ## Modified Code
 
