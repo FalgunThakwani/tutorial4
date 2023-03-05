@@ -1,0 +1,41 @@
+<mat-card>
+  <img mat-card-image src="{{dataSource.picture}}">
+  <mat-card-header>
+
+    <mat-card-title>{{dataSource.name}}</mat-card-title>
+    <mat-card-subtitle>{{dataSource.greeting}}</mat-card-subtitle>
+    <mat-card-subtitle>Email: {{dataSource.email}}</mat-card-subtitle>
+    <mat-card-subtitle>Phone: {{dataSource.phone}}</mat-card-subtitle>
+    <mat-card-subtitle>Age: {{dataSource.age}}</mat-card-subtitle>
+    <mat-card-subtitle>Gender: {{dataSource.gender}}</mat-card-subtitle>
+    <mat-card-subtitle>Balance: {{dataSource.balance}}</mat-card-subtitle>
+    <mat-card-subtitle>EyeColor: {{dataSource.eyeColor}}</mat-card-subtitle>
+    <mat-card-subtitle>Id: {{dataSource._id}}</mat-card-subtitle>
+    <mat-card-subtitle>FavoriteFruit: {{dataSource.favoriteFruit}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="user-content">
+      <p>About: {{dataSource.about}}</p>
+      <p>Registered: {{dataSource.registered}}</p>
+      <p>Longitude: {{dataSource.longitude}}</p>
+      <p>Latitude: {{dataSource.latitude}}</p>
+    </div>
+        <mat-list>
+        <div class="list">
+          <div mat-subheader>
+            <h2>Tags</h2></div>
+          <mat-divider></mat-divider>
+          <mat-list-item *ngFor="let tag of dataSource.tags">
+            <p>{{tag}}</p>
+          </mat-list-item>
+          <div mat-subheader>
+            <h2>Friends</h2></div>
+          <mat-divider></mat-divider>
+          <mat-list-item *ngFor="let friend of dataSource.friends">
+            <p matLine>Id: {{friend.id}}</p>
+              <p matLine>Name: {{friend.name}}</p>
+          </mat-list-item>
+        </div>
+        </mat-list>
+  </mat-card-content>
+</mat-card>

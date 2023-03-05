@@ -1,0 +1,50 @@
+<body>
+  <input type="text" [(ngModel)]="searchKey" placeholder="Search...">
+<mat-grid-list cols="3" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let profile of searchResult">
+    <mat-card class="profile-card" (click)="profilePage(profile._id)">
+      <mat-card-header>
+        <mat-card-title>{{ profile.name }}</mat-card-title>
+        <mat-card-subtitle>
+          <p>Email: {{profile.email}}</p>
+        </mat-card-subtitle>
+        <img mat-card-avatar src="{{profile.picture}}">
+      </mat-card-header>
+      <mat-card-content>
+        <p>Id: {{profile._id}}</p>
+        <!-- <p>Greeting: {{profile.greeting}}</p>
+        <p>FavoriteFruit: {{profile.favoriteFruit}}</p> -->
+        <p>Age: {{ profile.age }}</p>
+        <p>Balance: {{profile.balance}}</p>
+        <!-- <p>EyeColor: {{profile.eyeColor}}</p> -->
+        <!-- <p>Gender: {{profile.gender}}</p>
+        <p>Company: {{profile.company}}</p>
+        <p>Phone: {{profile.phone}}</p>
+        <p>Address: {{profile.address}}</p> -->
+        <p>About: {{profile.about}}</p>
+        <!-- <p>Registered: {{profile.registered}}</p>
+        <p>Longitude: {{profile.longitude}}</p>
+        <p>Latitude: {{profile.latitude}}</p> -->
+        <!-- <mat-list>
+        <div class="list">
+          <div mat-subheader>
+            <h2>Tags</h2></div>
+          <mat-divider></mat-divider>
+          <mat-list-item *ngFor="let tag of profile.tags">
+            <p>{{tag}}</p>
+          </mat-list-item>
+          <div mat-subheader>
+            <h2>Friends</h2></div>
+          <mat-divider></mat-divider>
+          <mat-list-item *ngFor="let friend of profile.friends">
+            <p matLine>Id: {{friend.id}}</p>
+              <p matLine>Name: {{friend.name}}</p>
+          </mat-list-item>
+        </div>
+        </mat-list> -->
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+</body>
+
